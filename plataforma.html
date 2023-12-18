@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Universitaria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="plataforma.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <img src="./img/university.png" alt="university" srcset="" style="width: 50px;height: 50px;">
+                <a class="navbar-brand" href="#">Plataforma</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="https://community.devf.la/">Estudia con
+                                nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="https://getbootstrap.com/">Nuestro
+                                Programa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="https://github.com/PontigobenjaA/Cajero">Otros Proyectos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="contanier">
+        <div class="row fullAlto border">
+            <div class="col-3 border-end menulateral">
+                <h1 class="display-5">Ingresa al Portal</h1>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <button type="button" class="btn btn-dark" onclick="mostraindice('menu1')">Alumno</button>
+                <button type="button" class="btn btn-dark" onclick="mostraindice('menu2')">Cursos</button>
+
+            </div>
+            <div class="col-9 ">
+                <div id="menu1">
+                    <form class="d-flex">
+                        <input id="Nombre" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                      </form>
+                      
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Edad</th>
+                                <th>Materias</th>
+                                <th>Notas</th>
+                                <th>Promedio</th>
+                                <th>Alta del Alumno</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+
+                    <div id="formularioU" class="formulario">
+                        <div class="mb-3">
+                            <label class="form-label">Nombre</label>
+                            <input type="text" id="nameU" class="form-control nameU"
+                                placeholder="Ingresa tu primer Nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label ">Apellido</label>
+                            <input type="text" id="apellidoU" class="form-control apellidoU"
+                                placeholder="Tu primer Apellido">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label ">Edad</label>
+                            <input type="number" id="edadU" class="form-control edadU">
+                        </div>
+                        <a>Estas Materias son obligatorias</a>
+                        <div>
+                            <div class="mb-3 row">
+                                <label for="staticEmail" class="col-sm-2 col-form-label">Materia</label>
+                                <div class="col-sm-10">
+                                  <input type="text" readonly class="form-control-plaintext" id="Matematicas" value="Matematicas">
+                                </div>
+                              </div>
+                            <div class="mb-3">
+                                <label class="form-label ">Nota</label>
+                                <input type="number" id="notaMateria" class="form-control edadU">
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="staticEmail" class="col-sm-2 col-form-label">Materia</label>
+                                <div class="col-sm-10">
+                                  <input type="text" readonly class="form-control-plaintext" id="Programación" value="Programación">
+                                </div>
+                              </div>
+                            <div class="mb-3">
+                                <label class="form-label ">Nota</label>
+                                <input type="number" id="notaOtraMateria" class="form-control edadU">
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-outline-success" onclick="ingresarDatos()">Ingresar</button>
+                        <button type="button" class="btn btn-outline-info" onclick="mostraindice('menu1')">Actulizar</button>
+                    </div>
+                </div>
+                <div id="menu2" style="display: none;">
+                    <div id="formulario2" class="row g-3 align-items-center">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Profesor</th>
+                                    <th>Curso</th>
+                                    <th>Promedio</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                        <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Profesor</label>
+                                    <input id="nameProfesor" type="text" id="nameU" class="form-control nameU"
+                                        placeholder="Ingresa tu Nombre">
+                                </div>
+                            <select id="selecion" class="form-select" aria-label="Default select example">
+                                <option selected>Seleciona el Curso</option>
+                                <option id="cursoP" value="Programación">Programación</option>
+                                <option id="cursoM" value="Matematicas">Matematicas</option>
+                              </select>
+                            <button id="botonMenu2" type="submit" onclick="informacionAgregar()" class="btn btn-outline-dark">Agregar</button>
+                          </form>
+                        
+                      </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="plataforma.js"></script>
+</body>
+
+</html>

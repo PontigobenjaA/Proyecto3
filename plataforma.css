@@ -1,0 +1,27 @@
+
+.fullAlto {
+    height: 100vh;
+   
+}
+.menulateral{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.formulario{
+    margin: 20px;
+    height: 40px;
+}
+#BotonOtra{
+    margin: 10px;
+}
+#formularioU{
+    padding: 30px;
+}
+#formulario2{
+    margin: 30px;
+}
+#botonMenu2{
+    margin: 10px;
+}
